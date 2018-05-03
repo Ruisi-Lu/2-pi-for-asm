@@ -19,6 +19,7 @@ loop
 		vmov.f	s1,s2		;s2 to s2  sqrt(2+sqrt2)+2
 		vdiv.f	s4,s3,s0	;s4 = s3/2
 		vmul.f	s5,s5,s4	; s5=s5*s4
+		vdiv.f	s6,s0,s5	;2/pi to pi
 
 		b		loop
 		END

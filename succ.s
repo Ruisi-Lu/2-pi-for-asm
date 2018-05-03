@@ -21,7 +21,7 @@ loop
 		vsqrt.f	s4,s3		;s4 = sqrt s3
 		vmov.f	s2,s3		;s3 to s2  sqrt(2+sqrt2)+2
 		vdiv.f	s5,s4,s7	;s5 = s4/2
-
+		vdiv.f	s15,s7,s5	; 2/pi to pi
 
 		b		loop
 		END
